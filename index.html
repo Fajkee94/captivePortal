@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accente.com - Nutzungsbedingungen</title>
+  <!-- Example: Using Google Fonts for a more modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      background: url("image.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Semi-transparent overlay to make text more readable */
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header & Logo */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .header img {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+    .company-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1a365d;
+      letter-spacing: 1px;
+    }
+    .accent {
+      color: #e53e3e;
+    }
+
+    /* Language Selector */
+    .language-selector {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .language-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-left: 10px;
+      color: #666;
+      text-decoration: underline;
+      transition: color 0.2s, text-decoration 0.2s;
+    }
+    .language-btn:hover {
+      color: #333;
+    }
+    .language-btn.active {
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Headings */
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+    h2 {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      font-size: 1.1rem;
+      color: #1a365d;
+    }
+
+    /* Terms box */
+    .terms {
+      height: 300px;
+      overflow-y: auto;
+      padding: 15px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      background-color: #fafafa;
+      border-radius: 4px;
+    }
+    .terms p,
+    .terms li {
+      margin-bottom: 0.8em;
+      line-height: 1.4;
+    }
+
+    /* Agree button */
+    .agree-btn {
+      display: block;
+      width: 220px;
+      margin: 0 auto 10px auto;
+      padding: 14px 0;
+      background-color: #1a365d;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .agree-btn:hover {
+      background-color: #2a4365;
+      transform: translateY(-1px);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #7f8c8d;
+    }
+
+    /* Language content sections */
+    .language-content {
+      display: none;
+    }
+    .language-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <!-- Language Selector -->
+      <div class="language-selector">
+        <button class="language-btn active" data-lang="de">Deutsch</button>
+        <button class="language-btn" data-lang="en">English</button>
+      </div>
+
+      <!-- Header with Logo -->
+      <div class="header">
+        <!-- Insert your logo file here -->
+        <img src="logo.svg" alt="Accente.com Logo" style="filter: invert(1); height: 70px; width: auto;" />
+
+        
+      </div>
+
+      <!-- German Content -->
+      <div id="de-content" class="language-content active">
+        <h1>Nutzungsbedingungen</h1>
+        <div class="terms">
+          <h2>1. Annahme der Bedingungen</h2>
+          <p>
+            Durch die Nutzung des von Accente.com bereitgestellten drahtlosen
+            Netzwerks erklären Sie sich mit diesen Nutzungsbedingungen, allen
+            geltenden Gesetzen und Vorschriften einverstanden und bestätigen,
+            dass Sie für die Einhaltung aller geltenden lokalen Gesetze
+            verantwortlich sind.
+          </p>
+
+          <h2>2. Nutzung des Netzwerks</h2>
+          <p>
+            Das Accente.com-Netzwerk wird für legitime geschäftliche und
+            persönliche Zwecke bereitgestellt. Sie verpflichten sich, das
+            Netzwerk nicht für rechtswidrige Zwecke oder für Zwecke zu nutzen,
+            die durch diese Bedingungen untersagt sind.
+          </p>
+
+          <h2>3. Verbotene Aktivitäten</h2>
+          <p>Die folgenden Aktivitäten sind strengstens untersagt:</p>
+          <ul>
+            <li>
+              Zugriff auf, Übertragung oder Verteilung von unbefugtem Material,
+              einschließlich, aber nicht beschränkt auf Material, das schädlich,
+              bedrohlich, missbräuchlich, belästigend, unerlaubt, verleumderisch,
+              vulgär, obszön oder invasiv in die Privatsphäre anderer ist
+            </li>
+            <li>
+              Versuche, die Benutzerauthentifizierung oder Sicherheit eines Hosts,
+              Netzwerks oder Kontos zu umgehen
+            </li>
+            <li>
+              Verbreitung von Malware, Viren oder anderen Formen von bösartiger
+              Software
+            </li>
+            <li>
+              Beteiligung an Aktivitäten, die den Netzwerkdienst stören oder
+              beeinträchtigen
+            </li>
+            <li>
+              Nutzung des Netzwerks für illegale Aktivitäten, einschließlich, aber
+              nicht beschränkt auf Verletzung von Urheberrechten oder geistigem
+              Eigentum
+            </li>
+          </ul>
+
+          <h2>4. Überwachung und Datenschutz</h2>
+          <p>
+            Accente.com behält sich das Recht vor, die Netzwerknutzung zu
+            Sicherheitszwecken und zur Einhaltung dieser Bedingungen zu
+            überwachen. Durch die Nutzung dieses Netzwerks erkennen Sie diese
+            Überwachung an und stimmen ihr zu.
+          </p>
+
+          <h2>5. Bandbreite und Ressourcennutzung</h2>
+          <p>
+            Accente.com behält sich das Recht vor, die Bandbreitennutzung zu
+            begrenzen und den Zugriff auf bestimmte Websites oder Dienste
+            einzuschränken, um einen fairen Zugang für alle Benutzer zu
+            gewährleisten.
+          </p>
+
+          <h2>6. Haftungsausschluss</h2>
+          <p>
+            Das Netzwerk wird "wie es ist" und "wie verfügbar" ohne jegliche
+            Garantien jeglicher Art, weder ausdrücklich noch stillschweigend,
+            einschließlich, aber nicht beschränkt auf Garantien der
+            Marktgängigkeit, Eignung für einen bestimmten Zweck oder
+            Nichtverletzung von Rechten Dritter, bereitgestellt.
+          </p>
+
+          <h2>7. Haftungsbeschränkung</h2>
+          <p>
+            In keinem Fall haftet Accente.com für direkte, indirekte, zufällige,
+            besondere, Folge- oder exemplarische Schäden, einschließlich, aber
+            nicht beschränkt auf Schäden aus entgangenem Gewinn, Goodwill, Nutzung,
+            Daten oder anderen immateriellen Verlusten, die sich aus der Nutzung
+            oder der Unmöglichkeit der Nutzung des Dienstes ergeben.
+          </p>
+
+          <h2>8. Freistellung</h2>
+          <p>
+            Sie erklären sich bereit, Accente.com, seine Tochtergesellschaften,
+            verbundenen Unternehmen, leitenden Angestellten, Vertreter und andere
+            Partner und Mitarbeiter von jeglichen Verlusten, Haftbarkeiten,
+            Ansprüchen oder Forderungen, einschließlich angemessener Anwaltskosten,
+            freizustellen, die von Dritten aufgrund oder infolge Ihrer Nutzung des
+            Netzwerks geltend gemacht werden.
+          </p>
+
+          <h2>9. Kündigung</h2>
+          <p>
+            Accente.com behält sich das Recht vor, Ihren Zugang zum Netzwerk
+            jederzeit, ohne vorherige Ankündigung, aus beliebigem Grund,
+            einschließlich, aber nicht beschränkt auf einen Verstoß gegen diese
+            Nutzungsbedingungen, zu beenden.
+          </p>
+
+          <h2>10. Änderungen der Bedingungen</h2>
+          <p>
+            Accente.com behält sich das Recht vor, diese Nutzungsbedingungen
+            jederzeit zu aktualisieren oder zu ändern, und Sie erklären sich damit
+            einverstanden, an solche Änderungen gebunden zu sein.
+          </p>
+
+          <h2>11. Geltendes Recht</h2>
+          <p>
+            Diese Nutzungsbedingungen unterliegen dem Recht der Bundesrepublik
+            Deutschland und werden in Übereinstimmung mit diesem ausgelegt.
+          </p>
+        </div>
+        <button class="agree-btn" id="agreeBtn-de">Ich stimme zu</button>
+      </div>
+
+      <!-- English Content -->
+      <div id="en-content" class="language-content">
+        <h1>Terms and Conditions</h1>
+        <div class="terms">
+          <h2>1. Acceptance of Terms</h2>
+          <p>
+            By accessing the wireless network provided by Accente.com, you agree
+            to be bound by these Terms and Conditions, all applicable laws and
+            regulations, and agree that you are responsible for compliance with
+            any applicable local laws.
+          </p>
+
+          <h2>2. Use of Network</h2>
+          <p>
+            The Accente.com network is provided for legitimate business and
+            personal use. You agree not to use the network for any unlawful
+            purpose or any purpose that is prohibited by these terms.
+          </p>
+
+          <h2>3. Prohibited Activities</h2>
+          <p>The following activities are strictly prohibited:</p>
+          <ul>
+            <li>
+              Accessing, transmitting, or distributing unauthorized material,
+              including but not limited to material that is harmful, threatening,
+              abusive, harassing, tortious, defamatory, vulgar, obscene, or
+              invasive of another's privacy
+            </li>
+            <li>
+              Attempting to circumvent user authentication or security of any
+              host, network, or account
+            </li>
+            <li>
+              Distributing malware, viruses, or any other forms of malicious
+              software
+            </li>
+            <li>
+              Engaging in any activity that interferes with or disrupts the
+              network service
+            </li>
+            <li>
+              Using the network for any illegal activity, including but not
+              limited to violation of copyright or intellectual property rights
+            </li>
+          </ul>
+
+          <h2>4. Monitoring and Privacy</h2>
+          <p>
+            Accente.com reserves the right to monitor network usage for security
+            purposes and compliance with these terms. By using this network, you
+            acknowledge and consent to such monitoring.
+          </p>
+
+          <h2>5. Bandwidth and Resource Usage</h2>
+          <p>
+            Accente.com reserves the right to limit bandwidth usage and to
+            restrict access to certain websites or services to ensure fair access
+            for all users.
+          </p>
+
+          <h2>6. Disclaimer of Warranties</h2>
+          <p>
+            The network is provided "as is" and "as available" without any
+            warranties of any kind, either express or implied, including but not
+            limited to warranties of merchantability, fitness for a particular
+            purpose, or non-infringement.
+          </p>
+
+          <h2>7. Limitation of Liability</h2>
+          <p>
+            In no event shall Accente.com be liable for any direct, indirect,
+            incidental, special, consequential or exemplary damages, including
+            but not limited to, damages for loss of profits, goodwill, use, data
+            or other intangible losses resulting from the use or the inability to
+            use the service.
+          </p>
+
+          <h2>8. Indemnification</h2>
+          <p>
+            You agree to indemnify and hold harmless Accente.com, its
+            subsidiaries, affiliates, officers, agents, and other partners and
+            employees, from any loss, liability, claim, or demand, including
+            reasonable attorney's fees, made by any third party due to or arising
+            out of your use of the network.
+          </p>
+
+          <h2>9. Termination</h2>
+          <p>
+            Accente.com reserves the right to terminate your access to the
+            network at any time, without notice, for any reason, including but
+            not limited to a violation of these Terms and Conditions.
+          </p>
+
+          <h2>10. Changes to Terms</h2>
+          <p>
+            Accente.com reserves the right to update or change these Terms and
+            Conditions at any time and you agree to be bound by such changes.
+          </p>
+
+          <h2>11. Governing Law</h2>
+          <p>
+            These Terms and Conditions shall be governed by and construed in
+            accordance with the laws of the Federal Republic of Germany.
+          </p>
+        </div>
+        <button class="agree-btn" id="agreeBtn-en">I Agree</button>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>© 2025 Accente.com. Alle Rechte vorbehalten. / All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Language switcher
+    const langButtons = document.querySelectorAll(".language-btn");
+    const contents = document.querySelectorAll(".language-content");
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const lang = this.getAttribute("data-lang");
+
+        // Update buttons active state
+        langButtons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        // Show relevant content
+        contents.forEach((content) => content.classList.remove("active"));
+        document.getElementById(`${lang}-content`).classList.add("active");
+      });
+    });
+
+    // Agree buttons
+    document.getElementById("agreeBtn-de").addEventListener("click", function () {
+      window.location.href = "https://accente.com";
+    });
+    document.getElementById("agreeBtn-en").addEventListener("click", function () {
+      window.location.href = "https://accente.com";
+    });
+  </script>
+</body>
+</html>
